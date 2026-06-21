@@ -1,0 +1,35 @@
+# Nytta AI
+
+> AI consulting for small businesses in Sweden. Free first analysis, then software & IoT hardware implementation if you want it.
+
+Nytta AI is a software and hardware (IoT) consulting firm based in Sweden. We help small businesses identify where AI can realistically improve their operations — saving time, money, or eliminating repetitive work. The first analysis is always free and the client keeps the written plan regardless of whether they proceed.
+
+## Services
+
+- **Free AI Readiness Analysis**: We walk through your operations and pinpoint where AI could save time or cut costs. No charge, no obligation.
+- **Custom AI Plan**: A written, concrete plan tailored to your specific business — not a template.
+- **Software & Hardware (IoT) Implementation**: We build the solution ourselves — chatbots, automation tools, IoT sensor networks, and more. Built, connected, handed over working.
+
+## Pricing
+
+- First analysis: always free (0 kr)
+- Implementation: scoped and priced per case — no fixed packages
+
+## About
+
+- 15+ years combined experience in software and hardware/IoT
+- Engineers first, advisors second — advice grounded in what can actually be built
+- Based in Sweden; work in Swedish, English, and Arabic
+- Direct contact only — phone and WhatsApp, no contact forms
+
+## Contact
+
+- Phone / WhatsApp: +46 70 797 65 92
+- Website: https://nytta-ai.se/
+
+## Process
+
+1. Reach out by phone or WhatsApp
+2. Free analysis — we learn how your business runs today
+3. You receive a written AI plan (yours to keep)
+4. Optional: we build the implementation together
