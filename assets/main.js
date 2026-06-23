@@ -4,6 +4,21 @@
   var RTL_LANGS = ["ar"];
   var STORAGE_KEY = "nytta-lang";
 
+  var PAGE_META = {
+    en: {
+      title: "Nytta AI — AI Consulting for Small Business",
+      description: "Nytta AI helps small businesses add AI to their daily work. Free first analysis — you get a written plan either way. Call or WhatsApp +46 70 797 65 92."
+    },
+    sv: {
+      title: "Nytta AI — AI-rådgivning för småföretag",
+      description: "Nytta AI hjälper småföretag att använda AI i det dagliga arbetet. Kostnadsfri första analys — ni får en skriftlig plan oavsett. Ring eller WhatsApp +46 70 797 65 92."
+    },
+    ar: {
+      title: "Nytta AI — استشارات الذكاء الاصطناعي للشركات الصغيرة",
+      description: "تساعد Nytta AI الشركات الصغيرة على إضافة الذكاء الاصطناعي إلى عملها اليومي. التحليل الأول مجاني. اتصل أو واتساب ‎+46 70 797 65 92."
+    }
+  };
+
   function applyLang(lang) {
     document.documentElement.setAttribute("lang", lang);
     document.documentElement.setAttribute(
@@ -14,6 +29,10 @@
       var isCurrent = btn.getAttribute("data-lang") === lang;
       btn.setAttribute("aria-current", isCurrent ? "true" : "false");
     });
+    var meta = PAGE_META[lang] || PAGE_META.sv;
+    document.title = meta.title;
+    var descEl = document.querySelector('meta[name="description"]');
+    if (descEl) descEl.setAttribute("content", meta.description);
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch (e) {
