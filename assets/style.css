@@ -572,6 +572,20 @@ html[dir="rtl"] .eyebrow::before { order: 2; }
   letter-spacing: 0.02em;
 }
 .footer-brand .orange-dot { color: var(--orange); }
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+.footer-social a {
+  display: inline-flex;
+  color: var(--gray);
+  transition: color 0.2s ease;
+}
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: var(--orange);
+}
 
 /* ============================================
    Sticky contact bar (mobile-first, always visible)
