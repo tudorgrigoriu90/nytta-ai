@@ -7,15 +7,15 @@
   var PAGE_META = {
     en: {
       title: "Nytta AI — AI Consulting for Small Business",
-      description: "Nytta AI helps small businesses add AI to their daily work. Free first analysis — you get a written plan either way. Call or WhatsApp +46 70 797 65 92."
+      description: "Nytta AI helps small businesses add AI to their daily work. Free first analysis — you get a written plan either way. Call or WhatsApp +46 707 97 55 92."
     },
     sv: {
       title: "Nytta AI — AI-rådgivning för småföretag",
-      description: "Nytta AI hjälper småföretag att använda AI i det dagliga arbetet. Kostnadsfri första analys — ni får en skriftlig plan oavsett. Ring eller WhatsApp +46 70 797 65 92."
+      description: "Nytta AI hjälper småföretag att använda AI i det dagliga arbetet. Kostnadsfri första analys — ni får en skriftlig plan oavsett. Ring eller WhatsApp +46 707 97 55 92."
     },
     ar: {
       title: "Nytta AI — استشارات الذكاء الاصطناعي للشركات الصغيرة",
-      description: "تساعد Nytta AI الشركات الصغيرة على إضافة الذكاء الاصطناعي إلى عملها اليومي. التحليل الأول مجاني. اتصل أو واتساب ‎+46 70 797 65 92."
+      description: "تساعد Nytta AI الشركات الصغيرة على إضافة الذكاء الاصطناعي إلى عملها اليومي. التحليل الأول مجاني. اتصل أو واتساب ‎+46 707 97 55 92."
     }
   };
 
