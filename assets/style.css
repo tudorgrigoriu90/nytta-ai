@@ -186,17 +186,10 @@ html[dir="rtl"] .eyebrow::before { order: 2; }
   .nav-cta:hover { background: var(--orange); }
 }
 
-.mobile-nav-toggle { display: none; }
-
 @media (max-width: 759px) {
-  .nav-links { display: none; }
-  .mobile-nav-toggle {
-    display: inline-flex;
-    border: 1px solid var(--line);
-    background: var(--paper);
-    border-radius: var(--radius);
-    padding: 8px 10px;
-    cursor: pointer;
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }
 
