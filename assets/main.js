@@ -72,3 +72,49 @@
     }
   });
 })();
+
+(function () {
+  var POPUP_COOKIE = "nytta-popup-dismissed";
+  var popup = document.getElementById("partner-popup");
+  var closeBtn = document.getElementById("popup-close");
+  if (!popup) return;
+
+  function getCookie(name) {
+    var match = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
+    return match ? match[1] : null;
+  }
+
+  function setCookie(name, days) {
+    var expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + "=1; expires=" + expires + "; path=/; SameSite=Lax";
+  }
+
+  function showPopup() {
+    if (getCookie(POPUP_COOKIE)) return;
+    popup.hidden = false;
+    popup.offsetHeight;
+    popup.classList.add("is-visible");
+  }
+
+  function hidePopup() {
+    popup.classList.remove("is-visible");
+    setCookie(POPUP_COOKIE, 30);
+    setTimeout(function () { popup.hidden = true; }, 300);
+  }
+
+  var timer = setTimeout(showPopup, 30000);
+
+  document.addEventListener("mouseleave", function (e) {
+    if (e.clientY < 10) { clearTimeout(timer); showPopup(); }
+  });
+
+  closeBtn.addEventListener("click", hidePopup);
+
+  popup.addEventListener("click", function (e) {
+    if (e.target === popup) hidePopup();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !popup.hidden) hidePopup();
+  });
+})();
